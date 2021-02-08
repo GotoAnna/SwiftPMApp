@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		0441B1ED25D1B5D5006A0B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0441B1EB25D1B5D5006A0B9A /* LaunchScreen.storyboard */; };
 		0441B1F825D1B5D5006A0B9A /* SwiftPMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441B1F725D1B5D5006A0B9A /* SwiftPMAppTests.swift */; };
 		0441B20325D1B5D5006A0B9A /* SwiftPMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441B20225D1B5D5006A0B9A /* SwiftPMAppUITests.swift */; };
+		0441B21425D1B63F006A0B9A /* 1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0441B21325D1B63F006A0B9A /* 1-1.png */; };
+		0441B21A25D1B6A1006A0B9A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0441B21925D1B6A1006A0B9A /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		0441B1FE25D1B5D5006A0B9A /* SwiftPMAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPMAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0441B20225D1B5D5006A0B9A /* SwiftPMAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPMAppUITests.swift; sourceTree = "<group>"; };
 		0441B20425D1B5D5006A0B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0441B21325D1B63F006A0B9A /* 1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0441B21A25D1B6A1006A0B9A /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 		0441B1D425D1B5D3006A0B9A = {
 			isa = PBXGroup;
 			children = (
+				0441B21325D1B63F006A0B9A /* 1-1.png */,
 				0441B1DF25D1B5D3006A0B9A /* SwiftPMApp */,
 				0441B1F625D1B5D5006A0B9A /* SwiftPMAppTests */,
 				0441B20125D1B5D5006A0B9A /* SwiftPMAppUITests */,
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				0441B21925D1B6A1006A0B9A /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = 0441B1DD25D1B5D3006A0B9A /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 0441B1D425D1B5D3006A0B9A;
+			packageReferences = (
+				0441B21825D1B6A1006A0B9A /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 0441B1DE25D1B5D3006A0B9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0441B1ED25D1B5D5006A0B9A /* LaunchScreen.storyboard in Resources */,
+				0441B21425D1B63F006A0B9A /* 1-1.png in Resources */,
 				0441B1EA25D1B5D5006A0B9A /* Assets.xcassets in Resources */,
 				0441B1E825D1B5D3006A0B9A /* Main.storyboard in Resources */,
 			);
@@ -587,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0441B21825D1B6A1006A0B9A /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0441B21925D1B6A1006A0B9A /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0441B21825D1B6A1006A0B9A /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0441B1D525D1B5D3006A0B9A /* Project object */;
 }
